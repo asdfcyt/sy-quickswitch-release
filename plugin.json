@@ -1,0 +1,41 @@
+{
+  "name": "sy-quickswitch",
+  "author": "asdfcyt",
+  "url": "https://github.com/asdfcyt/sy-quickswitch",
+  "version": "0.3.0",
+  "minAppVersion": "2.10.0",
+  "backends": ["all"],
+  "frontends": ["all"],
+  "displayName": {
+    "en_US": "Quick Switch",
+    "zh_CN": "快速切换",
+    "zh_CHT": "快速切換"
+  },
+  "description": {
+    "en_US": "Quick switch between opened tabs, search documents, and create reminders - similar to Obsidian's quick switcher",
+    "zh_CN": "快速切换已打开的标签页、搜索文档、创建提醒 - 类似 Obsidian 的快速切换功能",
+    "zh_CHT": "快速切換已打開的標籤頁、搜索文檔、創建提醒 - 類似 Obsidian 的快速切換功能"
+  },
+  "readme": {
+    "en_US": "README.md",
+    "zh_CN": "README_zh_CN.md",
+    "zh_CHT": "README_zh_CHT.md"
+  },
+  "funding": {
+    "openCollective": "",
+    "patreon": "",
+    "github": "",
+    "custom": [
+      ""
+    ]
+  },
+  "keywords": [
+    "quick-switch",
+    "search",
+    "navigation",
+    "tab",
+    "reminder",
+    "task"
+  ]
+}
+
