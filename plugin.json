@@ -2,7 +2,7 @@
   "name": "sy-quickswitch",
   "author": "asdfcyt",
   "url": "https://github.com/asdfcyt/sy-quickswitch-release",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "minAppVersion": "2.10.0",
   "backends": ["all"],
   "frontends": ["all"],
