@@ -63,7 +63,9 @@
 
 如遇到问题或有功能建议，欢迎提交 [Issue](https://github.com/asdfcyt/sy-quickswitch/issues)。
 
-由于源代码不公开，暂时无法接受 Pull Request，但非常欢迎提出建议和反馈。
+感谢下面这些项目给予的参考与帮助：
+https://github.com/Achuan-2/siyuan-plugin-task-note-management
+https://github.com/TCOTC/siyuan-plugin-hsr-mdzz2048-fork
 
 ### 📄 许可证
 
