@@ -1,6 +1,6 @@
 {
   "name": "sy-quickswitch-release",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "type": "module",
   "description": "快速切换插件 - 类似 Obsidian 的快速切换功能，支持切换已打开标签页和搜索文档",
   "repository": "https://github.com/asdfcyt/sy-quickswitch-release",
