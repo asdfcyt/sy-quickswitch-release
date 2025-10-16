@@ -80,6 +80,12 @@
 https://github.com/Achuan-2/siyuan-plugin-task-note-management
 https://github.com/TCOTC/siyuan-plugin-hsr-mdzz2048-fork
 
+### 用爱发电
+
+谢谢你的喜欢,如果用着还不错，请一杯咖啡呗
+![预览](./images/donation.png)
+
+
 ### 📄 许可证
 
 MIT License
