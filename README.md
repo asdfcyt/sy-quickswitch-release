@@ -1,12 +1,25 @@
 # Quick Switch - 快速切换插件
 
-[English](#english) | [简体中文](#简体中文) | [繁體中文](#繁體中文)
+[English](#english) | [简体中文](#简体中文) 
 
 ---
 
 ## 简体中文
 
 一个为思源笔记设计的快速切换插件，提供快速标签切换、文档搜索、文档内搜索和快速提醒等功能。
+
+### 更新记录(v0.3.3)
+
+- 修复部分Bug，优化了文内搜索的体验以及部分交互体验
+- 新增**最近笔记功能**：按`!`可查看最近更新的5个文档
+- 新增**一键生成日报、周报、月报功能**：需要在设置中配置api，推荐使用deepseek
+  - 注意：为了使上传到ai的信息是可选取的，避免部分信息泄漏，故日报、周报只筛选带时间戳（如2025-10-16 15:55:12）的块及其子块，而月报仅上传月度文档的标题。
+  - 日报功能: 日报聚焦于今日任务，使用ai整理今日的碎片信息。
+    -![日报](./images/d.png)
+  - 周报功能：周报聚焦于一周的产出，使用ai整理笔记的主题，尝试形成长期笔记。
+    -![周报](./images/w.png)
+  - 月报功能：月报强调长期的笔记文档分析，该部分会本地分析月度新建文档的信息，并生成可视化图表，并且会将所有笔记（除了daily中的日记）的标题及双链数发送至ai。
+    -![月报](./images/m.png)
 
 ### ✨ 功能特性
 
@@ -21,7 +34,7 @@
 ### 📖 使用方法
 
 #### 触发快速切换
-- 点击顶栏的闪电图标 ⚡
+- 点击顶栏图标 🔍
 - 使用快捷键：`⌘O` (Mac) 或 `Ctrl+O` (Windows/Linux)
 
 #### 快捷键操作
@@ -127,11 +140,6 @@ Configure through plugin settings:
 2. Extract to `workspace/data/plugins/` directory
 3. Restart SiYuan Note or reload plugins
 
-### 🔒 About Source Code
-
-This repository contains the compiled release version. The plugin is developed with TypeScript and Svelte, but the source code is not publicly available.
-
-The compiled JavaScript code is auditable - you can review the `index.js` file to understand the implementation.
 
 ### 🐛 Issue Reporting
 
@@ -143,74 +151,4 @@ Due to closed source, Pull Requests cannot be accepted at this time, but suggest
 
 MIT License
 
----
 
-## 繁體中文
-
-一個為思源筆記設計的快速切換插件，提供快速標籤切換、文檔搜索、文檔內搜索和快速提醒等功能。
-
-### ✨ 功能特性
-
-- ⚡ **快速標籤切換**：一鍵切換已打開的文檔標籤頁
-- 🔍 **文檔搜索**：全局搜索所有文檔，支持模糊匹配
-- 🎯 **文檔內搜索**：在當前文檔中搜索並高亮關鍵詞
-- ⏰ **快速提醒**：快速創建任務提醒（需要任務管理插件）
-- 📝 **快速日記**：一鍵插入內容到今日日記
-- ⌨️ **鍵盤導航**：完整的鍵盤導航支持
-- 🎨 **現代化界面**：美觀直觀的用戶界面
-
-### 📖 使用方法
-
-#### 觸發快速切換
-- 點擊頂欄的閃電圖標 ⚡
-- 使用快捷鍵：`⌘O` (Mac) 或 `Ctrl+O` (Windows/Linux)
-
-#### 快捷鍵操作
-- `↑` / `↓`：在結果中導航
-- `Enter`：打開選中的文檔
-- `⌘Enter` / `Ctrl+Enter`：將內容插入到今日日記
-- `Alt+Enter`：創建快速提醒
-- `Tab`：切換到文檔內搜索模式
-- `Esc`：關閉快速切換面板
-
-#### 功能說明
-- 已打開的文檔會顯示 ✓ 標記
-- 已打開的文檔會優先顯示在搜索結果頂部
-- 模糊匹配支持部分文本和路徑匹配
-- 實時搜索，帶防抖優化
-
-### ⚙️ 設置
-
-通過插件設置面板可以配置：
-- **搜索範圍**：選擇搜索所有筆記本、當前筆記本或自定義選擇
-- **顯示選項**：切換路徑顯示和設置最大結果數
-- **筆記本設置**：配置默認筆記本和日記筆記本
-
-### 📦 安裝
-
-#### 從集市安裝（推薦）
-1. 打開思源筆記
-2. 進入 `設置` → `集市` → `插件`
-3. 搜索 "快速切換" 或 "Quick Switch"
-4. 點擊 `下載` 並啟用
-
-#### 手動安裝
-1. 從 [Releases](https://github.com/asdfcyt/sy-quickswitch/releases) 下載最新的 `package.zip`
-2. 解壓到思源筆記的 `工作空間/data/plugins/` 目錄
-3. 重啟思源筆記或重新加載插件
-
-### 🔒 關於源代碼
-
-本倉庫包含的是編譯後的發布版本。插件使用 TypeScript 和 Svelte 開發，源代碼不公開。
-
-編譯後的 JavaScript 代碼是可以審查的，你可以查看 `index.js` 文件了解插件的實現。
-
-### 🐛 問題反饋
-
-如遇到問題或有功能建議，歡迎提交 [Issue](https://github.com/asdfcyt/sy-quickswitch/issues)。
-
-由於源代碼不公開，暫時無法接受 Pull Request，但非常歡迎提出建議和反饋。
-
-### 📄 許可證
-
-MIT License
